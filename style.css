@@ -2,10 +2,20 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background: linear-gradient(135deg, #8dff7e, #6156fd, #ffbc7c);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
-body{
-    background-color: #548687;
-    text-align: center;
+main h1 {
+    margin: 10vmin 0 0 95vmin;
 }
 
 .container{
@@ -44,7 +54,7 @@ body{
     color: #fff;
     border-radius: 1rem;
     border: none;
-    margin-bottom: 5vmin;
+    margin: 0 0 5vmin 95vmin;
 }
 
 #new-btn{
