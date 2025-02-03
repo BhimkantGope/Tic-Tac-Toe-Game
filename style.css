@@ -95,6 +95,6 @@ main h1 {
 
 @media (max-width: 400px){
     .msg-container{
-        height: 180vmin;
+        height: 250vmin;
     }
 }
