@@ -54,15 +54,9 @@ const enableBoxes = () => {
 };
 
 const showWinner = (winner) => {
-     if(!winner){
-        msg.innerText = `Game has drow!`;
-        msgContainer.classList.remove("hide");
-        disableBoxes();
-    } else {
-        msg.innerText = `Congratulations, Winner is ${winner}`;
-        msgContainer.classList.remove("hide");
-        disableBoxes();
-    }    
+    msg.innerText = `Congratulations, Winner is ${winner}`;
+    msgContainer.classList.remove("hide");
+    disableBoxes(); 
 };
 const checkWinner = () => {
     for(let pattern of winPatterns){
@@ -74,9 +68,12 @@ const checkWinner = () => {
         if(pos1Val != "" && pos2Val != "" && pos3Val != ""){
             if(pos1Val === pos2Val && pos2Val === pos3Val){
                 showWinner(pos1Val);
-            }
+            }else{
+                msg.innerText = `Game has drow!`;
+                msgContainer.classList.remove("hide");
+                disableBoxes();
+            } 
         }
-
     }
 };
 
