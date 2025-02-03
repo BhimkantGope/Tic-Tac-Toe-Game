@@ -15,7 +15,7 @@ body {
   }
 
 main h1 {
-    margin: 20vmin 0 0 0;
+    margin: 10vmin 0 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -96,12 +96,15 @@ main h1 {
 
 @media (max-width: 500px){
     .msg-container{
-        height:220vmin;
+        height:200vmin;
     }
     .container{
         margin: -100px;
     }
     #reset-btn{
         margin: -150px;
+    }
+    main h1{
+        margin-top: 20vmin;
     }
 }
