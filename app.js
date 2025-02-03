@@ -54,14 +54,15 @@ const enableBoxes = () => {
 };
 
 const showWinner = (winner) => {
-    if(!winner){
-        msg.innerText = `Congratulations, Winner is ${winner}`;
-        msgContainer.classList.remove("hide");
-    } else {
+     if(!winner){
         msg.innerText = `Game has drow!`;
         msgContainer.classList.remove("hide");
+        disableBoxes();
+    }else {
+        msg.innerText = `Congratulations, Winner is ${winner}`;
+        msgContainer.classList.remove("hide");
+        disableBoxes();
     }    
-    disableBoxes();
 };
 const checkWinner = () => {
     for(let pattern of winPatterns){
