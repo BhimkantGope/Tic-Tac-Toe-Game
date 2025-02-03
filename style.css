@@ -97,4 +97,7 @@ main h1 {
     .msg-container{
         height: 250vmin;
     }
+    main h1{
+        margin: 50vmin;
+    }
 }
