@@ -92,3 +92,9 @@ main h1 {
 .hide{
     display: none;
 }
+
+@media (max-width: 400px){
+    .msg-container{
+        height: 180vmin;
+    }
+}
