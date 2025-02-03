@@ -15,7 +15,12 @@ body {
   }
 
 main h1 {
-    margin: 10vmin 0 0 95vmin;
+    margin: 10vmin 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
 }
 
 .container{
@@ -47,14 +52,18 @@ main h1 {
     background-color: #ffffc7;
 }
 
-#reset-btn{
+#reset-btn{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     font-size: 1.25rem;
     background-color: #191913;
     color: #fff;
     border-radius: 1rem;
     border: none;
-    margin: 0 0 5vmin 95vmin;
+    margin: auto;
 }
 
 #new-btn{
