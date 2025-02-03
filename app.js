@@ -30,13 +30,10 @@ boxes.forEach((box) => {
             box.innerText = "X";
             turnX = false;
             box.style.color = "green";
-        } else if(turny){//Player O
+        } else{//Player O
             box.innerText = "O";
             turnX = true;
             box.style.color = "blue";
-        } else {//Drow
-            box.innerText = "";
-            console.log("game is drow");
         }
         box.disabled = true;
         checkWinner();
@@ -57,9 +54,13 @@ const enableBoxes = () => {
 };
 
 const showWinner = (winner) => {
-    msg.innerText = `Congratulations, Winner is ${winner}`;
-    msgContainer.classList.remove("hide");
-    
+    if(!winner){
+        msg.innerText = `Congratulations, Winner is ${winner}`;
+        msgContainer.classList.remove("hide");
+    } else {
+        msg.innerText = `Game has drow!`;
+        msgContainer.classList.remove("hide");
+    }    
     disableBoxes();
 };
 const checkWinner = () => {
