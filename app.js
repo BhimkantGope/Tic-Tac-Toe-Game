@@ -30,10 +30,12 @@ boxes.forEach((box) => {
             box.innerText = "X";
             turnX = false;
             box.style.color = "green";
-        } else {//Player O
+        } else if(turny){//Player O
             box.innerText = "O";
             turnX = true;
             box.style.color = "blue";
+        } else {//Drow
+            box.innerText = "Drow";
         }
         box.disabled = true;
         checkWinner();
