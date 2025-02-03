@@ -101,5 +101,7 @@ main h1 {
     .container{
         margin: -100px;
     }
-    
+    #reset-btn{
+        margin: -150px;
+    }
 }
