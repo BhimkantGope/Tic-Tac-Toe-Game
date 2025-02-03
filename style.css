@@ -29,7 +29,6 @@ main h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
 }
 
 .game{
@@ -99,7 +98,7 @@ main h1 {
         height:180vmin;
     }
     .container{
-        margin: -100px 0 0 0;
+        margin: -60px;
     }
     main h1{
         margin-top: 30vmin;
