@@ -29,6 +29,7 @@ main h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
 }
 
 .game{
@@ -97,4 +98,8 @@ main h1 {
     .msg-container{
         height:250vmin;
     }
+    .container{
+        margin: -100px;
+    }
+    
 }
