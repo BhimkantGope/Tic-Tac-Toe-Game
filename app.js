@@ -35,7 +35,8 @@ boxes.forEach((box) => {
             turnX = true;
             box.style.color = "blue";
         } else {//Drow
-            box.innerText = "Drow";
+            box.innerText = "";
+            console.log("game is drow");
         }
         box.disabled = true;
         checkWinner();
